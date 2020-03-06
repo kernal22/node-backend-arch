@@ -1,0 +1,19 @@
+<h1>Responstable <span>2.0</span> by <span>jordyvanraaij</span></h1>
+
+<table class="responstable">
+  
+  <tr>
+    <th>S.no</th>
+    <th data-th="Driver details"><span>Avatar</span></th>
+    <th>User Id</th>
+    <th>Name</th>
+    <th>See Friend List</th>
+  </tr>
+  <tr *ngFor = "let friend of friendList; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{friend.avatar}}</td>
+    <td>{{friend.user_id}}</td>
+    <td>{{friend.first_name}}</td>
+    <td><a>see friend list</a></td>
+  </tr>
+</table>
